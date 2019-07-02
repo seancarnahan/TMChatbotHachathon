@@ -6,7 +6,7 @@ Set up docker:
 
 Elastic search set up:
 DOCS: https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
-
+- docker pull docker.elastic.co/elasticsearch/elasticsearch:7.2.0
 -  screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty
     - Allows you to run system control commands to the docker VM
 - sysctl -w vm.max_map_count=262144
