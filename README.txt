@@ -1,5 +1,8 @@
 Hackathon 2019
 
+Set up docker:
+- lookup docker docs on Mac desktop docker edition
+- very simple to implement
 
 Elastic search set up:
 DOCS: https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
@@ -41,15 +44,13 @@ TO DO
     - A. Create an elastic search instance (DONE)
     - B. Create an index with there (DONE)
     - C. Put the parsed data in the index
-    - 
-2. Write an interface to make queries to get the data back (this is react widget) -> tamperMonkey chrome extension
+    -
+2. Write an interface to make queries to get the data back (this is react widget)
     - Build an interface to query that index
     - What ever the user types in
     - It will create an elastic search query
     - That query will return all the questions and answers that match that query
     - Take that top one and show the question and answer to the user
         - The top one is the magic of elastic search
-- 3. Add the chrome extend to integrate onto ticketmaster
+- 3. Add the chrome extend to integrate onto ticketmaster -> tamperMonkey chrome extension
 - 4. If extra time this is where we can implement NLP to make the elastic search even more accurate by basing it off parts of speech
-
-
