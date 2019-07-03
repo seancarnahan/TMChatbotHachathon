@@ -20,10 +20,22 @@ class App extends Component {
   }
 
   render() {
+    const isChatOpened = this.state.isChatOpened;
     return (
-      <div className="App">
-        <OpenChatButton triggerOpenChat={this.openChat}/>
+      <div>
+        {isChatOpened ? (
+          <div>
+            <ChatBoxWrapper/>
+          </div>
+        ) : (
+          <div className="App">
+            <OpenChatButton triggerOpenChat={this.openChat}/>
+          </div>
+        )}
       </div>
+
+
+
     );
   }
 }
