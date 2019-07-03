@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './header.js';
+import MessageBox from './messageBox'
 
 function ChatBoxWrapper() {
   return (
     <div className="ChatBoxWrapper">
-      <p>The is the rendered chatbox </p>
+      <Header/>
+      <MessageBox/>
     </div>
   );
 }
