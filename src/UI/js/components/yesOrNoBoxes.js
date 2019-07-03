@@ -1,10 +1,22 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-function YesOrNoBoxes() {
-  return (
-    <div className="YesOrNoBoxes">
-    </div>
-  );
+class YesOrNoBoxes extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return(
+      <div className="yesorno-wrapper">
+        <button className="yes-wrap" onclick={this.props.triggerYes}>
+          <p className="yes-text">Yes</p>
+        </button>
+        <button className="no-wrap" onclick={this.props.triggerNo}>
+          <p className="no-text">No</p>
+        </button>
+      </div>
+    );
+  }
 }
 
 export default YesOrNoBoxes;
