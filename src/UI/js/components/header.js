@@ -31,7 +31,7 @@ function Header() {
   const classes = useStyles();
 
   return (
-    <div className="Header">
+    <div className="Header-wrapper">
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="Menu">
@@ -39,13 +39,18 @@ function Header() {
               <Avatar alt="Remy Sharp" src="avatar.jpg" className={classes.bigAvatar} />
             </Grid>
           </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h6" className="header-person">
             Andrea
           </Typography>
-          <br/>
-          <p>
+          <p className="header-person-role">
             Customer Support Specialist
           </p>
+          <div className="header-faq-border">
+            <p>
+              FAQ
+            </p>
+          </div>
+
         </Toolbar>
       </AppBar>
     </div>
