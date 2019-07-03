@@ -8,6 +8,11 @@
   border-width: 1px;
 }
 
+
+
+
+
+
 .header {
   padding: 0;
   margin: 0;
@@ -33,4 +38,22 @@
 
 .MuiToolbar-regular {
   background-color: #2969cf;
+}
+
+.ConversationThread {
+  overflow-y: auto;
+}
+
+.AutoAnswer-message-box {
+  position: absolute;
+  width: 161px;
+  height: 32px;
+  left: 20px;
+  top: 75px;
+  font-family: Averta;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #000000;
+  background-color: grey;
 }
